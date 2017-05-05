@@ -14,7 +14,7 @@ export class ProfileComponent implements OnInit {
 
   constructor( private _githubservie: GithubService) { 
     this._githubservie.getUser().subscribe(user => {
-      // console.log(user);
+      console.log(user);
       this.user = user;
     });
 
